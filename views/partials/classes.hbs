@@ -1,0 +1,28 @@
+<div class="jumbotron">
+  <div class="text-center" style="width: 100%;">
+    <div class="container" style="padding-bottom: 5%;">
+      <h1>Featured Classes</h1>
+      <br />
+      <p>Integer non dui vehicula, sollicitudin tortor vitae, vestibulum purus. Nullam efficitur,
+        odio quis accumsan fringilla, risus neque auctor diam, quis lacinia turpis mi non sem.
+      </p>
+      <br />
+      <hr />
+      <br />
+    </div>
+    <div class="row">
+      {{#each classes}}
+      <div class="col animatedParent">
+        <a href="/classes/{{_id}}/details">
+        <div class="animated fadeInUp">
+          <img src="{{img_url}}" style="width: 20%; height: 20%;" title="Class Details" />
+          <h3><strong>{{title}}</strong></h3>
+          <br />
+          <br />
+        </div>
+      </a>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,88 @@
+<div class="banner">
+    <p class="scroll-down bounce">Scroll down
+      <br />
+      <i class="fas fa-angle-double-down"></i>
+    </p>
+  </div>
+    {{#if user}}
+      <div class="animatedParent">
+        <div class="jumbotron animated fadeInDown text-center">
+          <h2>Welcome back, {{user.username}}!</h2>
+          <br />
+          <div class="text-center">
+            <a href="/{{type}}s/classes" role="button" class="btn btn-custom">Go to the Dashboard</a>
+          </div>
+        </div>
+      </div>
+    {{else}}
+      <div class="animatedParent">
+        <div class="jumbotron animated fadeInDown text-center">
+          <h2 class="">Welcome To Code Studio</h2>
+          <p style="padding: 20px;">Coding is a skill unlike any other. Coding is the engine for
+            innovation that drives the world forward faster than ever before. And anyone can learn it.
+          </p>
+          <div class="text-center">
+            <a href="/users/signup" class="btn btn-custom">Start right now!</a>
+          </div>
+        </div>
+      </div>
+    {{/if}}
+    <br />
+    <br />
+    <div class="jumbotron" style="background-color:#263238; color:#fff; width:100%;margin-top:-5%; margin-bottom:-5%; padding: 10%;">
+      <div class="container">
+        <h2>Key Features</h2>
+        <p>Assembles is packed with powerful and highly practical options. Here are just some of the awesome features in the course.</p>
+        </br>
+        <div class="row">
+          <div class="col-md-4 mb-1 animatedParent">
+            <img class="animated rotateInDownLeft" src="https://res.cloudinary.com/di7m4tijz/image/upload/v1543584010/code-flat_qujzju.png" />
+            <h4 class="my-4 font-weight-bold">Programming</h4>
+            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                maiores nam,
+                aperiam minima
+                assumenda deleniti hic.</p>
+          </div>
+          <div class="col-md-4 mb-1 animatedParent">
+            <img class="animated rollIn" src="https://res.cloudinary.com/di7m4tijz/image/upload/c_scale,w_256/v1543584037/1024px-Circle-icons-computer.svg_dhnpn6.png">
+            <h4 class="my-4 font-weight-bold">Programming</h4>
+            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                maiores nam,
+                aperiam minima
+                assumenda deleniti hic.</p>
+          </div>
+          <div class="col-md-4 mb-1 animatedParent">
+            <img class="animated rotateInDownRight" src="https://res.cloudinary.com/di7m4tijz/image/upload/v1543585403/seo-web-code_razgvd.ico">
+            <h4 class="my-4 font-weight-bold" id="gallery-title">Programming</h4>
+            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                maiores nam,
+                aperiam minima
+                assumenda deleniti hic.</p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+    </div>
+      {{> classes }}
+  <div class="animatedParent" style="margin-top: -40px;margin-bottom: -40px;" id="about">
+    <div class="jumbotron animated fadeInDown" style="background-color:#b8bad6;">
+      <div class="container">
+          <h2>About us</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <p>In blandit eget orci vitae varius. Ut ex mauris, vestibulum sit amet orci at, cursus viverra risus. Vivamus porta accumsan tempor. Vestibulum molestie justo at ante venenatis, sed feugiat risus mattis. Sed sagittis arcu est, eget convallis erat egestas vel. Vestibulum quis lobortis arcu, vitae accumsan elit. Phasellus non lorem a eros suscipit viverra. Maecenas viverra blandit sodales. Praesent fermentum turpis non elit facilisis lobortis. Morbi eu lectus sed enim viverra bibendum.</p>
+          </div>
+          <div class="col-md-4 about">
+            <p>In blandit eget orci vitae varius. Ut ex mauris, vestibulum sit amet orci at, cursus viverra risus. Vivamus porta accumsan tempor. Vestibulum molestie justo at ante venenatis, sed feugiat risus mattis. Sed sagittis arcu est, eget convallis erat egestas vel. Vestibulum quis lobortis arcu, vitae accumsan elit. Phasellus non lorem a eros suscipit viverra. Maecenas viverra blandit sodales. Praesent fermentum turpis non elit facilisis lobortis. Morbi eu lectus sed enim viverra bibendum.</p>
+          </div>
+          <div class="col-md-4 animated  bounceInRight">
+            <img src="https://pngimage.net/wp-content/uploads/2018/05/coding-png-7.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    {{> footer }}
+  </footer>
